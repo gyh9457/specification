@@ -7,5 +7,10 @@ const config = {
   releaseCount: 0,
   preset: 'angular'
 }
-conventionalChangelog(config)
+conventionalChangelog(config, {
+  owner: 'gyh9457',
+  commit: 'commit',
+  host: 'https://github.com/',
+  repository: 'specification'
+})
   .pipe(stream)
